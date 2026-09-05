@@ -8,10 +8,12 @@ Respect The Dead (RTD). Pins recovered bodies in the hold.
 
 ## Dependencies
 
-- **HevLib** (`hev.LIBRARY`) — required
-- **Industries of Enceladus Rewrite** (`hev.IndustriesOfEnceladus`) — required
+- **[HevLib](https://github.com/rwqfsfasxc100/HevLib)** (`hev.LIBRARY`) — required ([releases](https://github.com/rwqfsfasxc100/HevLib/releases/latest))
+- **[Industries of Enceladus Rewrite](https://github.com/rwqfsfasxc100/IndustriesOfEnceladusRewrite)** (`hev.IndustriesOfEnceladus`) — required
+- Upstream IoE: [spdx-github/IndustriesOfEnceladus](https://github.com/spdx-github/IndustriesOfEnceladus)
 
-Install both before enabling this mod.
+Install HevLib + IoE Rewrite before enabling this mod. More context: [parent README](../../README.md).
+
 
 ## License & credits
 
