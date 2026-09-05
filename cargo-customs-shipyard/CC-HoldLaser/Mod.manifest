@@ -1,0 +1,27 @@
+[mod_information]
+
+name="Cargo Customs LOAP"
+id="chaos.CCHoldLaser"
+description="Laser-Ablative-Ore-Pusher. Own hold slot, stacks with IoE aux."
+brief="LOAP"
+author="chaos"
+
+[version]
+
+version_major=0
+version_minor=2
+version_bugfix=0
+
+[manifest_definitions]
+
+manifest_version=2.2
+dependancy_mod_ids=[ {
+"blocking": true,
+"minimum_version": [ 1, 15, 49 ],
+"mod_id": "hev.LIBRARY"
+}, {
+"blocking": true,
+"mod_id": "hev.IndustriesOfEnceladus"
+} ]
+modlet_priority=20
+expected_manifest_path="res://CC-HoldLaser/Mod.manifest"

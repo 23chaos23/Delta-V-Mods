@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://CC-RTD/ships/modules/CC_RTD.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40, 220 )
+
+[node name="SYSTEM_CC_RTD" type="Area2D"]
+collision_layer = 0
+collision_mask = 536871016
+monitorable = false
+gravity = 0.0
+script = ExtResource( 1 )
+systemName = "SYSTEM_CC_RTD"
+slot = "cargo.rtd"
+enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

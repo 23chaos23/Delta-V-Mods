@@ -1,0 +1,28 @@
+[mod_information]
+
+name="Enceladus Anonymous — Hacked wide arc PDT"
+id="chaos.HackedPDT"
+description="Wider traverse RADMW-8120 PDT for side hardpoints"
+brief="Side PDT +45 deg past center"
+author="chaos"
+
+[version]
+
+version_major=1
+version_minor=0
+version_bugfix=0
+
+[manifest_definitions]
+
+manifest_version=2.2
+dependancy_mod_ids=[ {
+"blocking": true,
+"minimum_version": [ 1, 15, 49 ],
+"mod_id": "hev.LIBRARY"
+}, {
+"blocking": true,
+"minimum_version": [ 2, 0, 0 ],
+"mod_id": "hev.IndustriesOfEnceladus"
+} ]
+modlet_priority=10
+expected_manifest_path="res://Hacked-PDT-mod/Mod.manifest"

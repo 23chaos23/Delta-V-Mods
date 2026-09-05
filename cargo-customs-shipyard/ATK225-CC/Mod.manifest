@@ -1,0 +1,27 @@
+[mod_information]
+
+name="Cargo Customs AT-K225"
+id="chaos.ATK225CC"
+description="Cargo Customs aftermarket Titan. Wider tapered hold, amorphic 54 t."
+brief="AT-K225-CC"
+author="chaos"
+
+[version]
+
+version_major=0
+version_minor=1
+version_bugfix=0
+
+[manifest_definitions]
+
+manifest_version=2.2
+dependancy_mod_ids=[ {
+"blocking": true,
+"minimum_version": [ 1, 15, 49 ],
+"mod_id": "hev.LIBRARY"
+}, {
+"blocking": true,
+"mod_id": "hev.IndustriesOfEnceladus"
+} ]
+modlet_priority=10
+expected_manifest_path="res://ATK225-CC/Mod.manifest"
