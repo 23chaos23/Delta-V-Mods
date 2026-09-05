@@ -30,6 +30,58 @@ Each folder is a full installable mod package (`Mod.manifest`, drivers, content,
 
 ---
 
+## Mods in detail
+
+### Enceladus Anonymous — Hacked wide arc PDT (`chaos.HackedPDT`)
+**What it does:** Black-market / Enceladus Anonymous fluff take on the RADMW-8120 microwave PDT. Factory gimbal stops are gone so the turret can sweep a wider forward arc (including past the keel on wing mounts). Same idea as a behaviour tweak, not a brand-new weapon family.
+
+**In the package:**
+- `weapons/PDT-MWTightBeam-wide.tscn` — wide-arc PDT scene
+- HevLib drivers: add equipment (center/left/right hardpoint variants), weapon-slot registration, English strings (desc/manual/specs)
+- Price: 290 000 E$ · ~800 m effective range · 120 MW draw / 90 MW output (per in-game specs text)
+
+**Watch out:** Do not mount on aft or inward hardpoints — friendly fire / self-cook risk is called out in the lore text.
+
+Folder: [`enceladus-anonymous/Hacked-PDT-mod`](enceladus-anonymous/Hacked-PDT-mod/) · v1.0.0
+
+---
+
+### Cargo Customs AT-K225 (`chaos.ATK225CC`)
+**What it does:** Aftermarket **Antonoff-Titan K225** yard refit from the fictional Cargo Customs shop on Enceladus Prime. Still has six docking bays; hold is gutted/rebuilt wider and tapered so ore jams less. Processed cargo listed as **54 t amorphic**.
+
+**In the package:**
+- `ships/ATK225-CC.tscn` — ship scene
+- HevLib drivers: `ADD_SHIPS`, ship node register, translations (name/desc/specs)
+- Stock-ish systems in the default config (MPU cargo, BWMT535 main, K37 RCS, HUD_AT225, etc.)
+
+**Pairs with:** LOAP and RTD register onto `SHIP_AT225_CC`.
+
+Folder: [`cargo-customs-shipyard/ATK225-CC`](cargo-customs-shipyard/ATK225-CC/) · v0.1.0
+
+---
+
+### Cargo Customs LOAP (`chaos.CCHoldLaser`)
+**What it does:** **Laser-Ablative-Ore-Pusher** — a Cargo Customs diode grid in the hold. When on, it paints rocks in the bay and gives them a small **aft shove** (pre-remass flavour; v0.2 does not actually make remass). Uses its own **CC Hold Gear** slot so it can stack with IoE bay aux.
+
+**In the package:**
+- `ships/modules/CC_HoldLaser.{gd,tscn}` — hold module (Area2D, ~4 MW draw, toggleable)
+- HevLib drivers: equipment item/slot/tags, node defs, ship register for `SHIP_AT225_CC`, translations
+
+Folder: [`cargo-customs-shipyard/CC-HoldLaser`](cargo-customs-shipyard/CC-HoldLaser/) · v0.2.0 · price 72 000 E$ (item)
+
+---
+
+### Cargo Customs RTD (`chaos.CCRTD`)
+**What it does:** **Respect The Dead** — recovery cradle for spacer remains. When bodies enter the hold they are secured amidships so they don’t drift back out the excavator / get lost on decel. Station recovery credit is meant to stay intact. Own **Remains Recovery** slot, separate from LOAP and IoE aux. Limited to the AT-K225-CC in the current drivers.
+
+**In the package:**
+- `ships/modules/CC_RTD.{gd,tscn}` — hold module (secures bodies on enter)
+- HevLib drivers: equipment item/slot/tags, node defs, ship register, translations
+
+Folder: [`cargo-customs-shipyard/CC-RTD`](cargo-customs-shipyard/CC-RTD/) · v0.1.0 · price 18 000 E$ (item)
+
+---
+
 ## Required dependencies (not bundled)
 
 These mods depend on community libraries. Install them first:

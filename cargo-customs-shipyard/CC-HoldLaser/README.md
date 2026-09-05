@@ -6,6 +6,22 @@
 
 Laser-Ablative-Ore-Pusher (LOAP). Own hold slot; stacks with IoE aux.
 
+
+## What it does
+
+**LOAP** (Laser-Ablative-Ore-Pusher): Cargo Customs diode grid in the hold. When enabled it paints ore chunks and gives a small **aft shove** (sold as a pre-remass unit — v0.2 does not manufacture remass). Uses its own **CC Hold Gear** slot so it can sit alongside IoE bay aux.
+
+## What's in the package
+
+- `ships/modules/CC_HoldLaser.gd` / `.tscn` — hold module (~4 MW draw, toggle from mechanics I/O)
+- HevLib drivers for equipment item, slot, tags, node placement, ship register on `SHIP_AT225_CC`, translations
+- `Mod.manifest` — id `chaos.CCHoldLaser`, v0.2.0
+- `LICENSE.md` + `.licenses/`
+
+## Notes
+
+Price 72 000 E$. Best with the AT-K225-CC ship.
+
 ## Dependencies
 
 - **[HevLib](https://github.com/rwqfsfasxc100/HevLib)** (`hev.LIBRARY`) — required ([releases](https://github.com/rwqfsfasxc100/HevLib/releases/latest))

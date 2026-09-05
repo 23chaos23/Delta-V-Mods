@@ -6,6 +6,22 @@
 
 Item behaviour mod: wider-traverse RADMW-8120 PDT for side hardpoints.
 
+
+## What it does
+
+Enceladus Anonymous fluff mod: a jailbroken **RADMW-8120** microwave PDT with factory gimbal stops removed so it can track a **wider forward arc** (including past the keel on wing mounts). Behaviour tweak of an existing PDT, not a whole new weapon line.
+
+## What's in the package
+
+- `weapons/PDT-MWTightBeam-wide.tscn` — wide-arc PDT scene
+- `HEVLIB_EQUIPMENT_DRIVER_TAGS/` — adds center / left / right hardpoint variants, weapon-slot registration, English desc/manual/specs
+- `Mod.manifest` — id `chaos.HackedPDT`, v1.0.0
+- `LICENSE.md` + `.licenses/` — HevLib/IoE licensing
+
+## Notes
+
+Do **not** fit aft or inward hardpoints — the in-game text warns you can cook your own ship. Price 290 000 E$. Needs HevLib ≥1.15.49 and IoE Rewrite ≥2.0.0.
+
 ## Dependencies
 
 - **[HevLib](https://github.com/rwqfsfasxc100/HevLib)** (`hev.LIBRARY`) — required ([releases](https://github.com/rwqfsfasxc100/HevLib/releases/latest))

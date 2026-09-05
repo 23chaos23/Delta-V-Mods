@@ -6,6 +6,22 @@
 
 Respect The Dead (RTD). Pins recovered bodies in the hold.
 
+
+## What it does
+
+**Respect The Dead (RTD):** a recovery cradle for spacers who didn’t make it home. Remains that enter the hold are secured amidships so they don’t drift back into the rings or get lost on deceleration. Recovery/station credit is meant to stay intact. Own **Remains Recovery** slot, separate from LOAP and IoE aux.
+
+## What's in the package
+
+- `ships/modules/CC_RTD.gd` / `.tscn` — hold module that secures bodies on enter
+- HevLib drivers for equipment item, slot (limited to `SHIP_AT225_CC`), tags, node placement, translations
+- `Mod.manifest` — id `chaos.CCRTD`, v0.1.0
+- `LICENSE.md` + `.licenses/`
+
+## Notes
+
+Price 18 000 E$. Currently limited to the Cargo Customs AT-K225 in the drivers.
+
 ## Dependencies
 
 - **[HevLib](https://github.com/rwqfsfasxc100/HevLib)** (`hev.LIBRARY`) — required ([releases](https://github.com/rwqfsfasxc100/HevLib/releases/latest))
